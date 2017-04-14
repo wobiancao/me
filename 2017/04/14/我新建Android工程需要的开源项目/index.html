@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>我新建Android工程需要的开源项目 | 兔子吃过窝边草</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="兔子吃过窝边草">
+    <meta name="author" content="兔子吃过窝边草">
+    <meta name="description" content="一个菜鸡Android开发" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/" title="兔子吃过窝边草" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/images/userHead.jpg" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">兔子吃过窝边草</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/wobiancao" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-04-14T07:30:43.000Z" itemprop="datePublished">
+          2017-04-14
+      </time>
+    
+</span>
+                <h1>我新建Android工程需要的开源项目</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>网络框架 retrofit 结合okhttp</p>
+<p>Retrofit很有创意的一款开源网络框架，让用户自定义接口，并使用其提供的注解，对接口进行解析和调用，是Square旗下的产品之一;动态代理和反射。其实Retrofit无非就是让用户创建接口，使用自己指定的规则进行网络访问，把接口传入Retrofit，接口上附着的规则由Retrofit进行层层解析后，再进行实际的网络调用。Retrofit所做的事情就是帮助用户简化了大量的网络访问代码，用户只需写少量代码就能得到想要的结果。</p>
+<p>开源地址：<a href="https://github.com/square/retrofit" target="_blank" rel="external">https://github.com/square/retrofit</a></p>
+<p>学习地址： <a href="http://zijianwang.xyz/blog/Android-Dev-The-simple-user-of-Retrofit-Http-Client/" target="_blank" rel="external">http://zijianwang.xyz/blog/Android-Dev-The-simple-user-of-Retrofit-Http-Client/</a></p>
+<p>事件总线框架 eventBus Otto事件总线框架</p>
+<p>原理解析 主要功能是帮助我们来降低多个类之间的耦合度的（解耦），都需要注册和反注册</p>
+<p>eventBus:</p>
+<p>1、找到被注册者中所有的订阅方法。</p>
+<p>2、依次遍历订阅方法，找到EventBus中eventType对应的订阅列表，然后根据当前订阅者和订阅方法创建一个新的订阅加入到订阅列表</p>
+<p>3、找到EvnetBus中subscriber订阅的事件列表，将eventType加入到这个事件列表。</p>
+<p>开源地址：<a href="https://github.com/greenrobot/EventBus" target="_blank" rel="external">https://github.com/greenrobot/EventBus</a></p>
+<p>学习地址：<a href="http://blog.csdn.net/harvic880925/article/details/40660137" target="_blank" rel="external">http://blog.csdn.net/harvic880925/article/details/40660137</a></p>
+<p>otto：</p>
+<p>@Subscribe 订阅事件，也就是事件的处理者，它有且仅有一个参数YourEvent，每一个Subscribe对应处理一个YourEvent。Event用于连接（匹配）post和订阅。</p>
+<p>@Produce 产生事件，改方法在对象被register后即被调用（–使用情况比较特殊的），该方法必须有一个非空的返回值，参数必须为空。 bus.post(new YourEvent(…)),发送一个事件，等待@Subcribe处理</p>
+<p>开源地址：<a href="https://github.com/square/otto" target="_blank" rel="external">https://github.com/square/otto</a></p>
+<p>应用模式 mvp mvc mvvm</p>
+<p>根据项目大小选择模式，大型项目推荐使用mvp模式，便于维护不解释，小型的应用用mvp会增加更多的时间，所以可以选择mvc，至于Android的mvvm大家可以先去了解，有兴趣可以做一做。</p>
+<p>响应式编程框架RxJava</p>
+<p>采用观察者设计模式,这个新鲜的东西强大又好用，至于教程大家可以看看这个</p>
+<p>学习地址：<a href="http://gank.io/post/560e15be2dca930e00da1083写得很详细" target="_blank" rel="external">http://gank.io/post/560e15be2dca930e00da1083写得很详细</a></p>
+<p>数据存储Realm</p>
+<p>Realm，为移动设备而生，替代SQLite和Core Data。为你省下数周的时间和数千行的代码，帮你创造出更棒的用户体验。</p>
+<p>主页：<a href="https://realm.io/cn/" target="_blank" rel="external">https://realm.io/cn/</a></p>
+<p>下拉刷新控件</p>
+<p>谁能想到，下拉刷新本来用原生的就很好，然而你们的ui设计会让你如愿吗？</p>
+<p>推荐一个下拉刷新控件：<a href="https://github.com/Aspsine/SwipeToLoadLayout" target="_blank" rel="external">https://github.com/Aspsine/SwipeToLoadLayout</a></p>
+<p>目前性能最好的下拉刷新 <a href="https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh" target="_blank" rel="external">https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh</a></p>
+<p>这些东西，构建一个基础应用已经够了，当然可以根据自己的爱好来换，我只是一个搬运工，不过，我推荐这些，都是我用在实际项目中的东西，好用才推荐！</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2017/04/14/猴赛雷抢红包插件App/" style="float: left;">
+        ← 猴赛雷抢红包插件App
+    </a>
+    
+    
+    <a class="pull-right" href="/2017/04/14/Android Studio ndk-Jni开发详细入门,Aes加密demo/">
+        Android Studio ndk-Jni开发详细入门,Aes加密demo →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 兔子吃过窝边草. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/wobiancao" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>

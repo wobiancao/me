@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>Android 软键盘和emoji表情切换方案，和微信几乎一样的体验 | 兔子吃过窝边草</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="兔子吃过窝边草">
+    <meta name="author" content="兔子吃过窝边草">
+    <meta name="description" content="一个菜鸡Android开发" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/" title="兔子吃过窝边草" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/images/userHead.jpg" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">兔子吃过窝边草</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/wobiancao" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-04-14T07:30:43.000Z" itemprop="datePublished">
+          2017-04-14
+      </time>
+    
+</span>
+                <h1>Android 软键盘和emoji表情切换方案，和微信几乎一样的体验</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p><img src="http://upload-images.jianshu.io/upload_images/1216032-9cc1f596c585d43d.gif?imageMogr2/auto-orient/strip" alt="demo.gif"><br>注意：本项目还有一个小坑。第一次进去的时候有时候输入框没有得到焦点，没有弹出软键盘，所以不能更好的量取软键盘高度，给了一个默认值787 软键盘默认高度。所以可以忽略不计，一旦弹出了软键盘，这个高度就被记录下来了，存在本地，以便下一次用。<br>这几天没事，想到之前做im聊天的时候，表情输入和键盘之间的切换体验有些问题，看了微信的，觉得真好，就有了想描摹一下的心思，所有有了这个demo。站在巨人的肩膀上，我们才能走得更远。<br>一些配置,导入相关的库：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">dependencies &#123;</div><div class="line"></div><div class="line">compile fileTree(dir: &apos;libs&apos;, include: [&apos;*.jar&apos;])</div><div class="line"></div><div class="line">testCompile &apos;junit:junit:4.12&apos;</div><div class="line"></div><div class="line">compile project(&apos;:library&apos;)</div><div class="line"></div><div class="line">compile &apos;com.android.support:appcompat-v7:23.1.1&apos;</div><div class="line"></div><div class="line">compile &apos;com.android.support:design:23.1.1&apos;</div><div class="line"></div><div class="line">compile &apos;com.jakewharton:butterknife:7.0.1&apos;//butterknife注解框架</div><div class="line"></div><div class="line">compile &apos;com.android.support:support-v4:23.1.1&apos;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>键盘弹出方案<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">android:windowSoftInputMode=&quot;stateVisible|adjustResize&quot;</div></pre></td></tr></table></figure></p>
+<p>提一下emoji表情输入，其实很简单。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">调用两个接口</div><div class="line">EmojiconGridFragment.OnEmojiconClickedListener//点击表情接口</div><div class="line">EmojiconsFragment.OnEmojiconBackspaceClickedListener//删除表情接口</div><div class="line"></div><div class="line">然后实现一下方法，emoji就好了</div><div class="line">@Override </div><div class="line"> public void onEmojiconBackspaceClicked(View v) &#123;</div><div class="line"> EmojiconsFragment.backspace(emojiEditTextView);</div><div class="line"> &#125; </div><div class="line"> </div><div class="line"> </div><div class="line"> @Override </div><div class="line"> public void onEmojiconClicked(Emojicon emojicon) &#123;</div><div class="line"> EmojiconsFragment.input(emojiEditTextView, emojicon);</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+<p>在运用前，要知道这个公式：<br>KeyBoard_H = Screen_H - StatusBar_H - AppRect_H<br>软键盘高度 = 分辨率高 - 状态栏高 - 应用可视高<br>于是有了这个方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">public static int getKeyboardHeight(Activity paramActivity) &#123;</div><div class="line">       int height = SystemUtils.getScreenHeight(paramActivity) - SystemUtils.getStatusBarHeight(paramActivity)</div><div class="line">               - SystemUtils.getAppHeight(paramActivity);</div><div class="line">       if (height == 0) &#123;</div><div class="line">           height = SharedPreferencesUtils.getIntShareData(&quot;KeyboardHeight&quot;, 787);//787为默认软键盘高度 基本差不离</div><div class="line">       &#125;else&#123;</div><div class="line">           SharedPreferencesUtils.putIntShareData(&quot;KeyboardHeight&quot;, height);</div><div class="line">       &#125;</div><div class="line">       return height;</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p>
+<p>主页布局文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</div><div class="line">&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</div><div class="line">    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;</div><div class="line">    xmlns:emojicon=&quot;http://schemas.android.com/apk/res-auto&quot;</div><div class="line">    xmlns:tools=&quot;http://schemas.android.com/tools&quot;</div><div class="line">    android:layout_width=&quot;match_parent&quot;</div><div class="line">    android:layout_height=&quot;match_parent&quot;</div><div class="line">    android:orientation=&quot;vertical&quot;</div><div class="line">    app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;</div><div class="line">    tools:context=&quot;com.wobiancao.keyboarddemo.MainActivity&quot;</div><div class="line">    tools:showIn=&quot;@layout/activity_main&quot;&gt;</div><div class="line"></div><div class="line">    &lt;LinearLayout</div><div class="line">        android:id=&quot;@+id/emojicons_container&quot;</div><div class="line">        android:layout_width=&quot;match_parent&quot;</div><div class="line">        android:layout_height=&quot;0dp&quot;</div><div class="line">        android:layout_weight=&quot;1&quot;</div><div class="line">        android:orientation=&quot;vertical&quot;&gt;</div><div class="line"></div><div class="line">        &lt;com.rockerhieu.emojicon.EmojiconEditText</div><div class="line">            android:id=&quot;@+id/emojicons_edit&quot;</div><div class="line">            android:layout_width=&quot;match_parent&quot;</div><div class="line">            android:layout_height=&quot;0dp&quot;</div><div class="line">            android:layout_weight=&quot;1&quot;</div><div class="line">            android:gravity=&quot;left|top&quot;</div><div class="line">            android:padding=&quot;8dp&quot;</div><div class="line">            android:textSize=&quot;18sp&quot;</div><div class="line">            emojicon:emojiconSize=&quot;18sp&quot; /&gt;</div><div class="line"></div><div class="line">        &lt;LinearLayout</div><div class="line">            android:layout_width=&quot;match_parent&quot;</div><div class="line">            android:layout_height=&quot;wrap_content&quot;</div><div class="line">            android:layout_marginTop=&quot;10dp&quot;</div><div class="line">            android:background=&quot;?attr/colorPrimary&quot;</div><div class="line">            android:gravity=&quot;center&quot;&gt;</div><div class="line"></div><div class="line">            &lt;ImageView</div><div class="line">                android:id=&quot;@+id/emojicons_icon&quot;</div><div class="line">                android:layout_width=&quot;40dip&quot;</div><div class="line">                android:layout_height=&quot;40dip&quot;</div><div class="line">                android:padding=&quot;8dip&quot;</div><div class="line">                android:src=&quot;@mipmap/ic_emoticon&quot; /&gt;</div><div class="line">        &lt;/LinearLayout&gt;</div><div class="line">    &lt;/LinearLayout&gt;</div><div class="line"></div><div class="line">    &lt;RelativeLayout</div><div class="line">        android:id=&quot;@+id/emojicons_layout&quot;</div><div class="line">        android:layout_width=&quot;match_parent&quot;</div><div class="line">        android:layout_height=&quot;wrap_content&quot;</div><div class="line">        android:visibility=&quot;gone&quot;&gt;&lt;/RelativeLayout&gt;</div><div class="line">&lt;/LinearLayout&gt;</div></pre></td></tr></table></figure></p>
+<p>剩下略提一下软键盘和输入框的切换<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div></pre></td><td class="code"><pre><div class="line"> @OnClick(&#123;R.id.emojicons_icon, R.id.emojicons_edit&#125;)</div><div class="line">    void onClick(View view) &#123;</div><div class="line">        switch (view.getId())&#123;</div><div class="line">            case R.id.emojicons_icon://点击表情图标,如果表情显示，隐藏表情，打开软键盘。反之，显示表情，隐藏键盘</div><div class="line">                if (emojiconsLayout.isShown()) &#123;</div><div class="line">                    hideEmotionView(true);</div><div class="line">                &#125; else &#123;</div><div class="line">                    showEmotionView(SystemUtils.isKeyBoardShow(this));</div><div class="line">                &#125;</div><div class="line">                break;</div><div class="line">            case R.id.emojicons_edit://点击输入框，打开软键盘，隐藏表情</div><div class="line">                hideEmotionView(true);</div><div class="line">                break;</div><div class="line">            default:</div><div class="line">                break;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">/**</div><div class="line">     * 隐藏emoji</div><div class="line">     **/</div><div class="line">    private void hideEmotionView(boolean showKeyBoard) &#123;</div><div class="line">        if (emojiconsLayout.isShown()) &#123;</div><div class="line">            if (showKeyBoard) &#123;</div><div class="line">                LinearLayout.LayoutParams localLayoutParams = (LinearLayout.LayoutParams) emojiconsContainer.getLayoutParams();</div><div class="line">                localLayoutParams.height = emojiconsLayout.getTop();</div><div class="line">                localLayoutParams.weight = 0.0F;</div><div class="line">                emojiconsLayout.setVisibility(View.GONE);</div><div class="line">                getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);</div><div class="line">                SystemUtils.showKeyBoard(editEmojicon);</div><div class="line">                editEmojicon.postDelayed(new Runnable() &#123;</div><div class="line"></div><div class="line">                    @Override</div><div class="line">                    public void run() &#123;</div><div class="line">                        unlockContainerHeightDelayed();</div><div class="line">                    &#125;</div><div class="line"></div><div class="line">                &#125;, 200L);</div><div class="line">            &#125; else &#123;</div><div class="line">                emojiconsLayout.setVisibility(View.GONE);</div><div class="line">                getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);</div><div class="line">                unlockContainerHeightDelayed();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    private void showEmotionView(boolean showAnimation) &#123;</div><div class="line">        if (showAnimation) &#123;</div><div class="line">            transitioner.setDuration(200);</div><div class="line">        &#125; else &#123;</div><div class="line">            transitioner.setDuration(0);</div><div class="line">        &#125;</div><div class="line">        emotionHeight = SystemUtils.getKeyboardHeight(this);</div><div class="line">        SystemUtils.hideSoftInput(editEmojicon);</div><div class="line">        emojiconsLayout.getLayoutParams().height = emotionHeight;</div><div class="line">        emojiconsLayout.setVisibility(View.VISIBLE);</div><div class="line">        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);</div><div class="line"></div><div class="line">        //在5.0有navigationbar的手机，高度高了一个statusBar</div><div class="line">        int lockHeight = SystemUtils.getAppContentHeight(this);</div><div class="line">        lockContainerHeight(lockHeight);</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>然后demo里面用到了开源emoji项目，贴上开源地址，表示感谢<br> emoji表情开源：<a href="https://github.com/rockerhieu/emojicon" target="_blank" rel="external">https://github.com/rockerhieu/emojicon</a><br>本demo开源地址 ：<a href="https://github.com/a12a15a05/KeyBoardDemo" target="_blank" rel="external">https://github.com/a12a15a05/KeyBoardDemo</a></p>
+<p>demo apk地址：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1216032-229bbebe3f45f596.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="demov.png"></p>
+<p>有bug或问题，欢迎探讨，谢谢</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2017/04/14/Android Studio一步步教你集成发布适配/">
+        Android Studio一步步教你集成发布适配 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 兔子吃过窝边草. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/wobiancao" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
