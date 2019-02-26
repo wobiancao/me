@@ -1205,6 +1205,11 @@ button, input, select, textarea, label {
     right: -53px
 }
 
+.header-shape-3 {
+    top: -40px;
+    right: -53px
+}
+
 .site-header-inner {
     position: relative;
     display: flex;
@@ -1252,6 +1257,12 @@ button, input, select, textarea, label {
         width: 220px;
         height: 220px
     }
+
+    .header-shape-3 {
+        top: -92px;
+        left: 640px;
+        right: auto
+    }
 }
 
 @media (min-width: 1025px) {
@@ -1263,6 +1274,12 @@ button, input, select, textarea, label {
     .header-shape-2 {
         left: auto;
         right: 38%
+    }
+
+
+    .header-shape-3 {
+        left: auto;
+        right: 10%
     }
 }
 
@@ -1396,6 +1413,13 @@ button, input, select, textarea, label {
     flex-grow: 1
 }
 
+.feature-x {
+    position: relative;
+    padding: 16px;
+    min-width: 940px;
+    flex-grow: 1
+}
+
 .feature-inner {
     position: relative;
     height: 100%;
@@ -1462,6 +1486,9 @@ button, input, select, textarea, label {
     .feature {
         padding: 24px
     }
+    .feature-x {
+        padding: 24px
+    }
 }
 
 @media (min-width: 1025px) {
@@ -1470,6 +1497,10 @@ button, input, select, textarea, label {
     }
 
     .feature:nth-child(even) {
+        top: 80px
+    }
+
+    .feature-x:nth-child(even) {
         top: 80px
     }
 }
