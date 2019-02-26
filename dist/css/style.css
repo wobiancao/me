@@ -1263,6 +1263,11 @@ button, input, select, textarea, label {
         left: 640px;
         right: auto
     }
+
+    .header-shape-3 svg {
+        width: 220px;
+        height: 220px
+    }
 }
 
 @media (min-width: 1025px) {
